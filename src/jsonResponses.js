@@ -7,7 +7,7 @@ const respondJSON = (request, response, status, object) => {
 
     response.writeHead(status, headers);
 
-    // If HEAD request or 204 No Content, send headers only without body
+
     if (request.method === 'HEAD' || status === 204) {
         return response.end();
     }
@@ -33,9 +33,9 @@ const addUser = (request, response, body) => {
         return respondJSON(request, response, 400, responseJSON);
     }
 
-    let responseCode = 201; // Created
+    let responseCode = 201; 
     if (users[body.name]) {
-        responseCode = 204; // Updated (No Content)
+        responseCode = 204; 
     } else {
         users[body.name] = {};
     }
