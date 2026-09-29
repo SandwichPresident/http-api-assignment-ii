@@ -1,0 +1,23 @@
+{
+  "name": "http-api-assignment-ii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eslint.config.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "pretest": "eslint ./src",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandwichPresident/http-api-assignment-ii.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SandwichPresident/http-api-assignment-ii/issues"
+  },
+  "homepage": "https://github.com/SandwichPresident/http-api-assignment-ii#readme"
+}
